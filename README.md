@@ -1,7 +1,7 @@
 # ⚡ Electroshok - E-Commerce Web App
-Gianmarko Joel Pereda Zarate
-Eyvin Rodriguez Leytth
-Guillermo Peña Garcia
-Arturo Manuel Noriega Noriega
-Bruno Diaz Gonzales
-Miguel Angelo Bautista Yancachajlla
+- Gianmarko Joel Pereda Zárate  
+- Eyvin Rodríguez Leytth  
+- Guillermo Peña García  
+- Arturo Manuel Noriega Noriega  
+- Bruno Díaz Gonzales  
+- Miguel Angelo Bautista Yancachajlla
