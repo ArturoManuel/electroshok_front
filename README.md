@@ -9,3 +9,9 @@
 - **🛒 Carrito:** Vista donde los usuarios pueden revisar sus productos seleccionados, actualizar cantidades o eliminar artículos.
 - **💳 Checkout:** Página de pago donde se ingresan los datos de envío y facturación.
 - **🔐 Login:** Sistema de autenticación para acceder a funciones personalizadas (como historial de pedidos y seguimiento).
+Gianmarko Joel Pereda Zarate
+Eyvin Rodriguez Leytth
+Guillermo Peña Garcia
+Arturo Manuel Noriega Noriega
+Bruno Diaz Gonzales
+Miguel Angelo Bautista Yancachajlla
