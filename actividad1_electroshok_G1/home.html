@@ -5,29 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="estilos/estilos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   </head>
   <body>
     <header>
-      <h1>ElectroShok</h1>
-      <form>
-        <input type="text" placeholder="Buscar productos, marcas y más" />
-        <button type="submit">Buscar</button>
-      </form>
+      <h1>Electroshok</h1>
+      <div class="header-top">
+        <form>
+          <div class="search-container">
+            <input type="text" placeholder="Buscar productos, marcas y más" />
+            <button type="submit">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+          <div class="header-actions">
+            <a href="login.html" class="header-icon">
+              <i class="fas fa-user"></i>
+              <span>Iniciar sesión</span>
+            </a>
+            <a href="carrito.html" class="header-icon">
+              <i class="fas fa-shopping-cart"></i>
+              <span>Carrito</span>
+            </a>
+          </div>
+        </form>
+      </div>
 
       <nav>
         <ul>
-          <li><a href="#">Todas las categorías</a></li>
-          <li><a href="#">Packs de ofertas</a></li>
-          <li><a href="#">Choice</a></li>
-          <li><a href="#">SuperOfertas</a></li>
-          <li><a href="#">AliExpress Business</a></li>
-          <li><a href="#">Hogar y jardín</a></li>
-          <li><a href="#">Cabello y pelucas</a></li>
-          <li><a href="#">Más</a></li>
+          <li><a href="#"><i class="fas fa-mobile-alt"></i> Celulares</a></li>
+          <li><a href="#"><i class="fas fa-laptop"></i> Laptops</a></li>
+          <li><a href="#"><i class="fas fa-desktop"></i> Monitores</a></li>
+          <li><a href="#"><i class="fas fa-keyboard"></i> Mouse y Teclados</a></li>
+          <li><a href="#"><i class="fas fa-microchip"></i> Accesorios</a></li>
+          <li><a href="#"><i class="fas fa-headphones"></i> Audífonos</a></li>
+          <li><a href="#"><i class="fas fa-volume-up"></i> Parlantes</a></li>
         </ul>
       </nav>
-      <a href="carrito.html">Carrito</a>
-      <a href="login.html">Login</a>
     </header>
 
     <main>
