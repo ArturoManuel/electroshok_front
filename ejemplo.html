@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Ecommerce</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .grid-container {
+        display: grid;
+        height: auto;
+        width: auto;
+        background-color: skyblue;
+        grid-template-areas:
+          "header"
+          "menu"
+          "principal"
+          "contenido-adicional"
+          "footer";
+      }
+      .header {
+        grid-area: header;
+      }
+      .menu {
+        grid-area: menu;
+      }
+      .principal {
+        grid-area: principal;
+      }
+      .contenido-adicional {
+        grid-area: contenido-adicional;
+      }
+      .footer {
+        grid-area: footer;
+      }
+      .item {
+        border: solid 3px dodgerblue;
+        width: auto;
+        height: 200px;
+        text-align: center;
+      }
+      @media (min-width: 501px) {
+        .grid-container {
+          grid-template-areas:
+            "header header"
+            "menu menu"
+            "principal contenido-adicional"
+            "footer footer";
+        }
+      }
+      @media (min-width: 801px) {
+        .grid-container {
+          grid-template-areas:
+            "header header header"
+            "menu principal contenido-adicional"
+            "footer footer footer";
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="grid-container">
+      <header class="header item">Encabezado</header>
+      <section class="menu item">Menu</section>
+      <section class="principal item">Principal</section>
+      <section class="contenido-adicional item">Adicional</section>
+      <footer class="footer item">Pie de Pagina</footer>
+    </main>
+  </body>
+</html>
