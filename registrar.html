@@ -25,24 +25,34 @@
 <header class="header">
 	<!-- Nivel 1: logo centrado -->
 	<div class="header-logo">
-		<img src="assets/images/Logo.svg" alt="Electroshok Logo"/>
+		<a href="index.html">
+			<img src="assets/images/Logo.svg" alt="Electroshok Logo"/>
+		</a>
 	</div>
 
 	<!-- Nivel 2: input izquierda - login/derecha -->
 	<div class="header-row">
 		<div class="search-bar">
 			<input type="text" placeholder="Buscar productos"/>
-			<button type="submit">
-				<img src="assets/images/icon_search.svg" alt="Buscar"/>
-			</button>
+			<a href="index.html">
+				<button type="button">
+					<img src="assets/images/icon_search.svg" alt="Buscar"/>
+				</button>
+			</a>
 		</div>
 
 		<div class="user-actions">
-			<a href="#" class="login">
-				<i class="fa-solid fa-user"></i>
-				<span>Iniciar sesión</span>
-			</a>
-			<a href="#" class="cart">
+			<div class="dropdown">
+				<a href="#" class="login">
+					<i class="fa-solid fa-user"></i>
+					<span>Mi cuenta</span>
+				</a>
+				<div class="dropdown-content">
+					<a href="login.html">Iniciar sesión</a>
+					<a href="registrar.html">Registrarse</a>
+				</div>
+			</div>
+			<a href="carrito.html" class="cart">
 				<i class="fa-solid fa-cart-shopping"></i>
 			</a>
 		</div>
