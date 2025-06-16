@@ -640,6 +640,183 @@ body {
 }
 
 /* =========================
+   FINALIZAR PAGO
+========================= */
+.checkout-section {
+  max-width: 700px;
+  margin: 40px auto;
+  background: #fff;
+  border: 1px solid #000;
+  border-radius: 12px;
+  padding: 32px 24px;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+  font-family: "Kdam Thmor Pro", sans-serif;
+}
+
+.checkout-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.checkout-summary {
+  background: #fafafa;
+  border: 1px solid #e0dd4d;
+  border-radius: 8px;
+  padding: 24px 20px;
+  margin-bottom: 16px;
+}
+
+.checkout-summary h3 {
+  font-size: 22px;
+  color: #000;
+  margin-bottom: 12px;
+  font-weight: 700;
+}
+.checkout-summary ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 12px;
+}
+
+.checkout-summary ul li {
+  font-size: 16px;
+  color: #000;
+  margin-bottom: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.checkout-summary ul li span {
+  font-weight: 700;
+  color: #000;
+}
+
+.checkout-summary .total-row {
+  font-size: 20px;
+  font-weight: 700;
+  color: #e0dd4d;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  border-top: 2px solid #e0dd4d;
+  padding-top: 10px;
+}
+
+.checkout-shipping {
+  background: #fafafa;
+  border: 1px solid #e0dd4d;
+  border-radius: 8px;
+  padding: 24px 20px;
+  margin-bottom: 16px;
+}
+
+.checkout-shipping h3 {
+  font-size: 20px;
+  color: #000;
+  margin-bottom: 12px;
+  font-weight: 700;
+}
+
+.checkout-shipping form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.checkout-shipping form label {
+  font-size: 15px;
+  color: #000;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.checkout-shipping label input {
+  padding: 8px 10px;
+  border: 1px solid #000;
+  border-radius: 6px;
+  font-size: 15px;
+  font-family: "Kdam Thmor Pro", sans-serif;
+  background: #fff;
+  color: #000;
+}
+
+.checkout-payment {
+  background: #fafafa;
+  border: 1px solid #e0dd4d;
+  border-radius: 8px;
+  padding: 24px 20px;
+}
+
+.checkout-payment h3 {
+  font-size: 20px;
+  color: #000;
+  margin-bottom: 12px;
+  font-weight: 700;
+}
+
+.checkout-payment form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.checkout-payment form label {
+  font-size: 15px;
+  color: #000;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.checkout-payment label select,
+.checkout-payment label input {
+  padding: 8px 10px;
+  border: 1px solid #000;
+  border-radius: 6px;
+  font-size: 15px;
+  font-family: "Kdam Thmor Pro", sans-serif;
+  background: #fff;
+  color: #000;
+}
+
+.checkout-payment form button {
+  background: #e0dd4d;
+  color: #000;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 32px;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.checkout-payment form button:hover {
+  background: #d1c900;
+}
+
+@media only screen and (max-width: 768px) {
+  .checkout-section {
+    padding: 20px;
+    max-width: 95vw;
+  }
+  .checkout-container {
+    gap: 20px;
+  }
+  .checkout-summary,
+  .checkout-shipping,
+  .checkout-payment {
+    padding: 16px;
+  }
+}
+
+/* =========================
    FOOTER
 ========================= */
 
