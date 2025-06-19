@@ -23,9 +23,10 @@
 <!-- HEADER -->
 <header class="header">
 	<!-- Nivel 1: logo centrado -->
-	<div class="header-logo">
+	<a href="index.html" class="header-logo">
 		<img src="assets/images/Logo.svg" alt="Electroshok Logo"/>
-	</div>
+	</a>
+
 
 	<!-- Nivel 2: input izquierda - login/derecha -->
 	<div class="header-row">
@@ -76,28 +77,12 @@
   <section class="cart-section">
     <h2>Carrito de Compras</h2>
     <div class="cart-items">
-      <!-- Ejemplo de producto en el carrito -->
-      <div class="cart-item">
-        <img src="assets/images/background.png" alt="Producto 1" class="cart-item-image"/>
-        <div class="cart-item-details">
-          <h3 class="cart-item-title">Nombre del Producto</h3>
-          <p class="cart-item-price">S/ 299.00</p>
-          <div class="cart-item-quantity">
-            <label for="quantity-1">Cantidad:</label>
-            <input type="number" id="quantity-1" name="quantity-1" value="1" min="1"/>
-          </div>
-          <button class="cart-item-remove">
-            <i class="fa-solid fa-trash"></i> Eliminar
-          </button>
-        </div>
-      </div>
-      <!-- Fin ejemplo -->
-      <!-- Puedes duplicar el bloque .cart-item para más productos -->
+      <!-- Productos agregados desde Js -->
     </div>
     <div class="cart-summary">
       <p>Total: <span class="cart-total">S/ 299.00</span></p>
-      <button class="checkout-btn"><a href="finalizar-pago.html">Finalizar Compra</a></button>
-    </div>
+		<a href="finalizar-pago.html" class="checkout-btn">Finalizar Compra</a>
+	</div>
   </section>
 </main>
 
@@ -111,6 +96,8 @@
       </section>
       <p>© 2025 Electroshok. Desarrollado por Grupo 1 - Electroshok . Todos los derechos reservados.</p>
 </footer>
+
+<script src="js/carritoScript.js"></script>
 
 </body>
 </html>

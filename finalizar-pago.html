@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<meta charset="UTF-8"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-	<title>Checkout - Electroshok</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Checkout - Electroshok</title>
 
-	<!-- Estilos principales -->
-	<link rel="stylesheet" href="css/style.css"/>
+    <!-- Estilos principales -->
+    <link rel="stylesheet" href="css/style.css"/>
 
-	<!-- Icons Font Awesome -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-	      crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <!-- Icons Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
 
-	<!-- Google Fonts -->
-	<link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -22,152 +22,140 @@
 
 <!-- HEADER -->
 <header class="header">
-	<!-- Nivel 1: logo centrado -->
-	<div class="header-logo">
-		<img src="assets/images/Logo.svg" alt="Electroshok Logo"/>
-	</div>
+    <!-- Nivel 1: logo centrado -->
+    <a href="index.html" class="header-logo">
+        <img src="assets/images/Logo.svg" alt="Electroshok Logo"/>
+    </a>
 
-	<!-- Nivel 2: input izquierda - login/derecha -->
-	<div class="header-row">
-		<div class="search-bar">
-			<input type="text" placeholder="Buscar productos"/>
-			<button type="submit">
-				<img src="assets/images/icon_search.svg" alt="Buscar"/>
-			</button>
-		</div>
+    <!-- Nivel 2: input izquierda - login/derecha -->
+    <div class="header-row">
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar productos"/>
+            <button type="submit">
+                <img src="assets/images/icon_search.svg" alt="Buscar"/>
+            </button>
+        </div>
 
-		<div class="user-actions">
-			<a href="login.html" class="login">
-				<i class="fa-solid fa-user"></i>
-				<span>Iniciar sesión</span>
-			</a>
-			<a href="carrito.html" class="cart">
-				<i class="fa-solid fa-cart-shopping"></i>
-			</a>
-		</div>
-	</div>
+        <div class="user-actions">
+            <a href="login.html" class="login">
+                <i class="fa-solid fa-user"></i>
+                <span>Iniciar sesión</span>
+            </a>
+            <a href="carrito.html" class="cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+        </div>
+    </div>
 
-	<!-- Nivel 3: categorías -->
-	<nav class="header-nav">
-		<div class="nav-desktop">
-			<button>Celulares</button>
-			<button>Tablets</button>
-			<button>Laptops</button>
-			<button>PC</button>
-			<button>Accesorios</button>
-		</div>
-		<div class="nav-mobile">
-			<button class="nav-toggle">
-				<i class="fa-solid fa-bars"></i> <span>Categorias</span>
-			</button>
-			<div class="nav-mobile-menu">
-				<button>Celulares</button>
-				<button>Tablets</button>
-				<button>Laptops</button>
-				<button>PC</button>
-				<button>Accesorios</button>
-			</div>
-		</div>
-	</nav>
+    <!-- Nivel 3: categorías -->
+    <nav class="header-nav">
+        <div class="nav-desktop">
+            <button>Celulares</button>
+            <button>Tablets</button>
+            <button>Laptops</button>
+            <button>PC</button>
+            <button>Accesorios</button>
+        </div>
+        <div class="nav-mobile">
+            <button class="nav-toggle">
+                <i class="fa-solid fa-bars"></i> <span>Categorias</span>
+            </button>
+            <div class="nav-mobile-menu">
+                <button>Celulares</button>
+                <button>Tablets</button>
+                <button>Laptops</button>
+                <button>PC</button>
+                <button>Accesorios</button>
+            </div>
+        </div>
+    </nav>
 </header>
 
 <!-- MAIN -->
 <main>
-  <section class="checkout-section">
-    <div class="checkout-container">
-      <h2>Finalizar Pago</h2>
-      <!-- Detalles finales de pedido -->
-      <div class="checkout-summary">
-        <h3>Detalles del Pedido</h3>
-        <ul class="order-summary-list">
-          <li>
-            <span>Producto 1</span>
-            <span class="price">S/ 500.00</span>
-          </li>
-          <li>
-            <span>Producto 2</span>
-            <span class="price">S/ 300.00</span>
-          </li>
-          <li>
-            <span>Envío</span>
-            <span class="price">S/ 20.00</span>
-          </li>
-          <li class="total-row">
-            <strong>Total</strong>
-            <strong>S/ 820.00</strong>
-          </li>
-        </ul>
-      </div>
+    <section class="checkout-section">
+        <div class="checkout-container">
+            <h2>Finalizar Pago</h2>
+            <!-- Detalles finales de pedido -->
+            <div class="checkout-summary">
+                <h3>Detalles del Pedido</h3>
+                <ul class="order-summary-list">
+                    <!-- Se cargará desde JS -->
+                </ul>
 
-      <!-- Detalles para el envío -->
-      <div class="checkout-shipping">
-        <h3>Detalles de Envío</h3>
-        <form>
-          <label>
-            Nombre completo
-            <input type="text" name="nombre" required>
-          </label>
-          <label>
-            Dirección
-            <input type="text" name="direccion" required>
-          </label>
-          <label>
-            Ciudad
-            <input type="text" name="ciudad" required>
-          </label>
-          <label>
-            Teléfono
-            <input type="tel" name="telefono" required>
-          </label>
-          <label>
-            Email
-            <input type="email" name="email" required>
-          </label>
-        </form>
-      </div>
 
-      <!-- Detalles para el pago -->
-      <div class="checkout-payment">
-        <h3>Detalles de Pago</h3>
-        <form>
-          <label>
-            Método de pago
-            <select name="metodo_pago" required>
-              <option value="">Selecciona una opción</option>
-              <option value="tarjeta">Tarjeta de crédito/débito</option>
-              <option value="yape">Yape/Plin</option>
-              <option value="transferencia">Transferencia bancaria</option>
-            </select>
-          </label>
-          <label>
-            Número de tarjeta
-            <input type="text" name="tarjeta" maxlength="16" pattern="\d{16}" placeholder="1234 5678 9012 3456">
-          </label>
-          <label>
-            Fecha de vencimiento
-            <input type="text" name="vencimiento" maxlength="5" placeholder="MM/AA">
-          </label>
-          <label>
-            CVV
-            <input type="text" name="cvv" maxlength="4" pattern="\d{3,4}" placeholder="123">
-          </label>
-          <button type="submit" class="btn-finalizar">Finalizar Pago</button>
-        </form>
-      </div>
-    </div>
-  </section>
+            </div>
+
+            <!-- Detalles para el envío -->
+            <div class="checkout-shipping">
+                <h3>Detalles de Envío</h3>
+                <form>
+                    <label>
+                        Nombre completo
+                        <input type="text" name="nombre" required>
+                    </label>
+                    <label>
+                        Dirección
+                        <input type="text" name="direccion" required>
+                    </label>
+                    <label>
+                        Ciudad
+                        <input type="text" name="ciudad" required>
+                    </label>
+                    <label>
+                        Teléfono
+                        <input type="tel" name="telefono" required>
+                    </label>
+                    <label>
+                        Email
+                        <input type="email" name="email" required>
+                    </label>
+                </form>
+            </div>
+
+            <!-- Detalles para el pago -->
+            <div class="checkout-payment">
+                <h3>Detalles de Pago</h3>
+                <form>
+                    <label>
+                        Método de pago
+                        <select name="metodo_pago" required>
+                            <option value="">Selecciona una opción</option>
+                            <option value="tarjeta">Tarjeta de crédito/débito</option>
+                            <option value="yape">Yape/Plin</option>
+                            <option value="transferencia">Transferencia bancaria</option>
+                        </select>
+                    </label>
+                    <label>
+                        Número de tarjeta
+                        <input type="text" name="tarjeta" maxlength="16" pattern="\d{16}" placeholder="1234 5678 9012 3456">
+                    </label>
+                    <label>
+                        Fecha de vencimiento
+                        <input type="text" name="vencimiento" maxlength="5" placeholder="MM/AA">
+                    </label>
+                    <label>
+                        CVV
+                        <input type="text" name="cvv" maxlength="4" pattern="\d{3,4}" placeholder="123">
+                    </label>
+                    <button type="submit" class="btn-finalizar">Finalizar Pago</button>
+                </form>
+            </div>
+        </div>
+    </section>
 </main>
 
 <!-- FOOTER -->
 <footer class="footer">
-      <section>
+    <section>
         <h3>Contacto</h3>
         <p>Telefono: +51 987654321</p>
         <p>Email: contacto@electroshok.com</p>
         <p>Direccion: Av. Garcilaso de la Vega 1253, Lima 15001</p>
-      </section>
-      <p>© 2025 Electroshok. Desarrollado por Grupo 1 - Electroshok . Todos los derechos reservados.</p>
+    </section>
+    <p>© 2025 Electroshok. Desarrollado por Grupo 1 - Electroshok . Todos los derechos reservados.</p>
 </footer>
+<script src="js/finalizarScript.js"></script>
 
 </body>
 </html>

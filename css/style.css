@@ -994,6 +994,19 @@ body {
   }
 }
 
+a.product-card {
+  text-decoration: none;
+  color: inherit;
+}
+
+.add-to-cart-btn a,
+.add-to-cart-btn a:visited,
+.add-to-cart-btn a:hover,
+.add-to-cart-btn a:active {
+  color: inherit;
+  text-decoration: none;
+}
+
 /* =========================
    FOOTER
 ========================= */
@@ -1013,3 +1026,4 @@ footer h3 {
 footer section {
   margin-bottom: 12px;
 }
+

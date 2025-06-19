@@ -23,9 +23,9 @@
 <!-- HEADER -->
 <header class="header">
 	<!-- Nivel 1: logo centrado -->
-	<div class="header-logo">
+	<a href="index.html" class="header-logo">
 		<img src="assets/images/Logo.svg" alt="Electroshok Logo"/>
-	</div>
+	</a>
 
 	<!-- Nivel 2: input izquierda - login/derecha -->
 	<div class="header-row">
@@ -41,7 +41,7 @@
 				<i class="fa-solid fa-user"></i>
 				<span>Iniciar sesión</span>
 			</a>
-			<a href="#" class="cart">
+			<a href="carrito.html" class="cart">
 				<i class="fa-solid fa-cart-shopping"></i>
 			</a>
 		</div>
@@ -76,13 +76,13 @@
 <section class="product-detail-section">
   <div class="product-detail">
     <div class="product-detail-image">
-      <img src="assets/images/background.png" alt="Nombre del producto"/>
-    </div>
+		<img class="product-image" src="" alt=""/>
+	</div>
     <div class="product-detail-info">
-      <h1 class="product-detail-title">Nombre del Producto</h1>
-      <p class="product-detail-stock">Stock: <span>15 unidades</span></p>
-      <p class="product-detail-price">S/ 1,299.00</p>
-      <div class="product-detail-quantity">
+		<h1 class="product-name">Nombre del Producto</h1>
+		<p class="product-stock">Stock: <span class="stock-value">0</span> unidades</p>
+		<p class="product-price">S/ <span class="price-value">0.00</span></p>
+		<div class="product-detail-quantity">
         <button class="quantity-btn" aria-label="Disminuir cantidad">-</button>
         <input class="quantity-input" type="number" min="1" max="15" value="1" readonly/>
         <button class="quantity-btn" aria-label="Aumentar cantidad">+</button>
@@ -94,16 +94,8 @@
   </div>
   <div class="product-detail-description">
     <h2>Descripción del producto</h2>
-    <p>
-      Este es un producto de alta calidad, ideal para quienes buscan rendimiento y durabilidad. Cuenta con las últimas características tecnológicas y un diseño moderno que se adapta a cualquier necesidad. Perfecto para uso diario o profesional.
-    </p>
-    <ul>
-      <li>Pantalla Full HD de 6.5"</li>
-      <li>Procesador Octa-Core</li>
-      <li>Memoria RAM de 8GB</li>
-      <li>Almacenamiento interno de 128GB</li>
-      <li>Batería de larga duración</li>
-    </ul>
+	  <p class="description-text">Descripción del producto</p>
+	  <ul class="product-features"></ul>
   </div>
 </section>
 </main>
@@ -118,6 +110,8 @@
       </section>
       <p>© 2025 Electroshok. Desarrollado por Grupo 1 - Electroshok . Todos los derechos reservados.</p>
 </footer>
+
+<script src="js/productoScript.js"></script>
 
 </body>
 </html>
