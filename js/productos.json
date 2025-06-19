@@ -1,0 +1,92 @@
+[
+  {
+    "nombre": "Laptop XPS 13",
+    "marca": "Dell",
+    "imagen": "https://i.dell.com/sites/imagecontent/products/PublishingImages/xps-13-9310-laptop/spi/ng/xps-13-9310-laptop-gallery-1.jpg",
+    "precio": 4693.96
+  },
+  {
+    "nombre": "Smartphone Galaxy S24",
+    "marca": "Samsung",
+    "imagen": "https://images.samsung.com/is/image/samsung/p6pim/pe/2401/gallery/pe-galaxy-s24-sm-s921bzkzltp-thumb-539242877",
+    "precio": 3609.96
+  },
+  {
+    "nombre": "Auriculares WH-1000XM5",
+    "marca": "Sony",
+    "imagen": "https://m.media-amazon.com/images/I/71o8Q5XJS5L._AC_SL1500_.jpg",
+    "precio": 1370.68
+  },
+  {
+    "nombre": "Tablet iPad Air (5ta Gen)",
+    "marca": "Apple",
+    "imagen": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-air-finish-unselect-gallery-1-202207?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=1664294769339",
+    "precio": 2162.39
+  },
+  {
+    "nombre": "Monitor UltraSharp 27\" 4K",
+    "marca": "Dell",
+    "imagen": "https://i.dell.com/is/image/DellContent//content/dam/ss2/product-images/peripherals/monitors/dell/u2723qe/media-gallery/monitor-u2723qe-gallery-1.psd?fmt=jpg&wid=570&hei=400",
+    "precio": 2346.46
+  },
+  {
+    "nombre": "Mouse MX Master 3S",
+    "marca": "Logitech",
+    "imagen": "https://resource.logitech.com/w_800,c_limit,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/products/mice/mx-master-3s/gallery/mx-master-3s-top-view-graphite.png?v=1",
+    "precio": 360.96
+  },
+  {
+    "nombre": "Teclado Mecánico K95 RGB",
+    "marca": "Corsair",
+    "imagen": "https://m.media-amazon.com/images/I/91RCYHcgwCL._AC_SL1500_.jpg",
+    "precio": 721.58
+  },
+  {
+    "nombre": "Smartwatch Galaxy Watch 6",
+    "marca": "Samsung",
+    "imagen": "https://images.samsung.com/is/image/samsung/assets/pe/smartphones/galaxy-watch6/buy/kv_group_pc.png",
+    "precio": 1262.47
+  },
+  {
+    "nombre": "Router Archer AX90",
+    "marca": "TP-Link",
+    "imagen": "https://static.tp-link.com/Archer-AX90-01_1610535994361g.jpg",
+    "precio": 829.27
+  },
+  {
+    "nombre": "Cámara EOS R50 Mirrorless",
+    "marca": "Canon",
+    "imagen": "https://m.media-amazon.com/images/I/81tG5dWRCXL._AC_SL1500_.jpg",
+    "precio": 2705.89
+  },
+  {
+    "nombre": "Disco Duro Externo 2TB",
+    "marca": "Seagate",
+    "imagen": "https://m.media-amazon.com/images/I/71vMKV5vWWL._AC_SL1500_.jpg",
+    "precio": 324.86
+  },
+  {
+    "nombre": "Altavoz Bluetooth SoundLink Flex",
+    "marca": "Bose",
+    "imagen": "https://assets.bose.com/content/dam/Bose_DAM/Web/consumer_electronics/global/products/speakers/soundlink_flex/product_silo_images/SoundLink_Flex_Luxe_Blue_EC_hero.psd/jcr:content/renditions/cq5dam.web.600.600.png",
+    "precio": 537.89
+  },
+  {
+    "nombre": "Proyector 4K HDR X3000i",
+    "marca": "BenQ",
+    "imagen": "https://m.media-amazon.com/images/I/61uSuibNVaL._AC_SL1500_.jpg",
+    "precio": 6855.39
+  },
+  {
+    "nombre": "SSD NVMe 980 PRO 1TB",
+    "marca": "Samsung",
+    "imagen": "https://images.samsung.com/is/image/samsung/p6pim/pe/mz-v8p1t0bw/gallery/pe-ssd-980-pro-pcie-4-0-nvme-mz-v8p1t0bw-530600481",
+    "precio": 505.36
+  },
+  {
+    "nombre": "Impresora EcoTank L3250",
+    "marca": "Epson",
+    "imagen": "https://epson.com.pe/imagenes/impresoras/ecotank/l3250/l3250_2.jpg",
+    "precio": 718.39
+  }
+]
