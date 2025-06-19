@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>Carrito - Electroshok</title>
+
+	<!-- Estilos principales -->
+	<link rel="stylesheet" href="css/style.css"/>
+
+	<!-- Icons Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+	      crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Fondo decorativo -->
+<div class="background-pattern"></div>
+
+<!-- HEADER -->
+<header class="header">
+	<!-- Nivel 1: logo centrado -->
+	<div class="header-logo">
+		<img src="assets/images/Logo.svg" alt="Electroshok Logo"/>
+	</div>
+
+	<!-- Nivel 2: input izquierda - login/derecha -->
+	<div class="header-row">
+		<div class="search-bar">
+			<input type="text" placeholder="Buscar productos"/>
+			<button type="submit">
+				<img src="assets/images/icon_search.svg" alt="Buscar"/>
+			</button>
+		</div>
+
+		<div class="user-actions">
+			<a href="login.html" class="login">
+				<i class="fa-solid fa-user"></i>
+				<span>Iniciar sesión</span>
+			</a>
+			<a href="#" class="cart">
+				<i class="fa-solid fa-cart-shopping"></i>
+			</a>
+		</div>
+	</div>
+
+	<!-- Nivel 3: categorías -->
+	<nav class="header-nav">
+		<div class="nav-desktop">
+			<button>Celulares</button>
+			<button>Tablets</button>
+			<button>Laptops</button>
+			<button>PC</button>
+			<button>Accesorios</button>
+		</div>
+		<div class="nav-mobile">
+			<button class="nav-toggle">
+				<i class="fa-solid fa-bars"></i> <span>Categorias</span>
+			</button>
+			<div class="nav-mobile-menu">
+				<button>Celulares</button>
+				<button>Tablets</button>
+				<button>Laptops</button>
+				<button>PC</button>
+				<button>Accesorios</button>
+			</div>
+		</div>
+	</nav>
+</header>
+
+<!-- MAIN -->
+<main>
+  <section class="cart-section">
+    <h2>Carrito de Compras</h2>
+    <div class="cart-items">
+      <!-- Ejemplo de producto en el carrito -->
+      <div class="cart-item">
+        <img src="assets/images/background.png" alt="Producto 1" class="cart-item-image"/>
+        <div class="cart-item-details">
+          <h3 class="cart-item-title">Nombre del Producto</h3>
+          <p class="cart-item-price">S/ 299.00</p>
+          <div class="cart-item-quantity">
+            <label for="quantity-1">Cantidad:</label>
+            <input type="number" id="quantity-1" name="quantity-1" value="1" min="1"/>
+          </div>
+          <button class="cart-item-remove">
+            <i class="fa-solid fa-trash"></i> Eliminar
+          </button>
+        </div>
+      </div>
+      <!-- Fin ejemplo -->
+      <!-- Puedes duplicar el bloque .cart-item para más productos -->
+    </div>
+    <div class="cart-summary">
+      <p>Total: <span class="cart-total">S/ 299.00</span></p>
+      <button class="checkout-btn"><a href="finalizar-pago.html">Finalizar Compra</a></button>
+    </div>
+  </section>
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+      <section>
+        <h3>Contacto</h3>
+        <p>Telefono: +51 987654321</p>
+        <p>Email: contacto@electroshok.com</p>
+        <p>Direccion: Av. Garcilaso de la Vega 1253, Lima 15001</p>
+      </section>
+      <p>© 2025 Electroshok. Desarrollado por Grupo 1 - Electroshok . Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>
