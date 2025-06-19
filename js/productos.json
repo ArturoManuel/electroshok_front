@@ -2,13 +2,13 @@
   {
     "nombre": "Laptop XPS 13",
     "marca": "Dell",
-    "imagen": "https://i.dell.com/sites/imagecontent/products/PublishingImages/xps-13-9310-laptop/spi/ng/xps-13-9310-laptop-gallery-1.jpg",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSIpHsriaKJuwY2IpngNe7W7I6Zf6feddJ8w&s",
     "precio": 4693.96
   },
   {
     "nombre": "Smartphone Galaxy S24",
     "marca": "Samsung",
-    "imagen": "https://images.samsung.com/is/image/samsung/p6pim/pe/2401/gallery/pe-galaxy-s24-sm-s921bzkzltp-thumb-539242877",
+    "imagen": "https://coolboxpe.vtexassets.com/arquivos/ids/348212/Galaxy-S24-Ultra-plata_1.jpg?v=638443230506070000",
     "precio": 3609.96
   },
   {
@@ -20,73 +20,73 @@
   {
     "nombre": "Tablet iPad Air (5ta Gen)",
     "marca": "Apple",
-    "imagen": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-air-finish-unselect-gallery-1-202207?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=1664294769339",
+    "imagen": "https://oechsle.vteximg.com.br/arquivos/ids/10067832/image-9b9df413a3b84d7eb875057968d51de7.jpg?v=637943946559270000",
     "precio": 2162.39
   },
   {
     "nombre": "Monitor UltraSharp 27\" 4K",
     "marca": "Dell",
-    "imagen": "https://i.dell.com/is/image/DellContent//content/dam/ss2/product-images/peripherals/monitors/dell/u2723qe/media-gallery/monitor-u2723qe-gallery-1.psd?fmt=jpg&wid=570&hei=400",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4J-7JDDlOcLAarCoY22MmfgSa0CYysl9m8A&s",
     "precio": 2346.46
   },
   {
     "nombre": "Mouse MX Master 3S",
     "marca": "Logitech",
-    "imagen": "https://resource.logitech.com/w_800,c_limit,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/products/mice/mx-master-3s/gallery/mx-master-3s-top-view-graphite.png?v=1",
+    "imagen": "https://m.media-amazon.com/images/I/512V4kRs2iL._UF1000,1000_QL80_.jpg",
     "precio": 360.96
   },
   {
     "nombre": "Teclado Mecánico K95 RGB",
     "marca": "Corsair",
-    "imagen": "https://m.media-amazon.com/images/I/91RCYHcgwCL._AC_SL1500_.jpg",
+    "imagen": "https://ezpc.pe/wp-content/uploads/2022/07/CH-9127414-NA.jpg",
     "precio": 721.58
   },
   {
     "nombre": "Smartwatch Galaxy Watch 6",
     "marca": "Samsung",
-    "imagen": "https://images.samsung.com/is/image/samsung/assets/pe/smartphones/galaxy-watch6/buy/kv_group_pc.png",
+    "imagen": "https://media.falabella.com/falabellaPE/123540248_01/public",
     "precio": 1262.47
   },
   {
     "nombre": "Router Archer AX90",
     "marca": "TP-Link",
-    "imagen": "https://static.tp-link.com/Archer-AX90-01_1610535994361g.jpg",
+    "imagen": "https://http2.mlstatic.com/D_NQ_NP_750021-MLM51328370169_082022-O.webp",
     "precio": 829.27
   },
   {
     "nombre": "Cámara EOS R50 Mirrorless",
     "marca": "Canon",
-    "imagen": "https://m.media-amazon.com/images/I/81tG5dWRCXL._AC_SL1500_.jpg",
+    "imagen": "https://lenz.pe/cdn/shop/files/Camara-Mirrorless-EOS-R50-Lente-RF-S-18-45mm-f4_5-6_3-IS-STM.jpg?v=1707717382&width=2048",
     "precio": 2705.89
   },
   {
     "nombre": "Disco Duro Externo 2TB",
     "marca": "Seagate",
-    "imagen": "https://m.media-amazon.com/images/I/71vMKV5vWWL._AC_SL1500_.jpg",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSASfIAPF8sXQ0G9sX-8Yvx5vGX1VWoERBDkA&s",
     "precio": 324.86
   },
   {
     "nombre": "Altavoz Bluetooth SoundLink Flex",
     "marca": "Bose",
-    "imagen": "https://assets.bose.com/content/dam/Bose_DAM/Web/consumer_electronics/global/products/speakers/soundlink_flex/product_silo_images/SoundLink_Flex_Luxe_Blue_EC_hero.psd/jcr:content/renditions/cq5dam.web.600.600.png",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzmWN25VuAZhIiMs03YrZGCScpYyc5EfLgog&s",
     "precio": 537.89
   },
   {
     "nombre": "Proyector 4K HDR X3000i",
     "marca": "BenQ",
-    "imagen": "https://m.media-amazon.com/images/I/61uSuibNVaL._AC_SL1500_.jpg",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkN3tHh4aul94lZNt0d1oE8NPOS2NeOPbSZg&s",
     "precio": 6855.39
   },
   {
     "nombre": "SSD NVMe 980 PRO 1TB",
     "marca": "Samsung",
-    "imagen": "https://images.samsung.com/is/image/samsung/p6pim/pe/mz-v8p1t0bw/gallery/pe-ssd-980-pro-pcie-4-0-nvme-mz-v8p1t0bw-530600481",
+    "imagen": "https://oechsle.vteximg.com.br/arquivos/ids/15349352/image-820b26595a26454e9f21486587166545.jpg?v=638282291954130000",
     "precio": 505.36
   },
   {
     "nombre": "Impresora EcoTank L3250",
     "marca": "Epson",
-    "imagen": "https://epson.com.pe/imagenes/impresoras/ecotank/l3250/l3250_2.jpg",
+    "imagen": "https://production-tailoy-repo-magento-statics.s3.amazonaws.com/imagenes/872x872/productos/i/i/m/impresora-epson-l3250-wifi-53573-default-1.jpg",
     "precio": 718.39
   }
 ]

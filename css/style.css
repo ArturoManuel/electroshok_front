@@ -294,6 +294,21 @@ body {
   justify-content: flex-end;
 }
 
+.product-image {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.product-image img {
+  width: auto;
+  max-width: 200px;
+  height: 150px;
+}
+
 .product-info {
   display: flex;
   flex-direction: row;
