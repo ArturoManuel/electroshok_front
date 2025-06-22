@@ -1,69 +1,84 @@
 let productosMasVendidos = [];
 let productosRecienLlegados = [];
 let todosLosProductos = [];
-let tipoActivo = 'todos'; 
+let tipoActivo = "todos";
+
+/**
+ * Iniciar el archivo index.html con Live Server (si usa VSCode)
+ * o una herramienta similar para poder cargar los productos correctamente,
+ * en caso contrario podra encontrar algunos errores.
+ *
+ */
 
 document.addEventListener("DOMContentLoaded", () => {
   fetch("js/productos.json")
-      .then(res => res.json())
-      .then(data => {
-        todosLosProductos = data;
-        
-        actualizarProductosPorTipo('todos');
-        
-        configurarFiltros();
-      });
+    .then((res) => res.json())
+    .then((data) => {
+      todosLosProductos = data;
+
+      actualizarProductosPorTipo("todos");
+
+      configurarFiltros();
+    });
 });
 
 const configurarFiltros = () => {
-  const botonesDesktop = document.querySelectorAll('.nav-desktop button');
-  const botonesMobile = document.querySelectorAll('.nav-mobile-menu button');
-  
-  botonesDesktop.forEach(boton => {
-    boton.addEventListener('click', () => {
+  const botonesDesktop = document.querySelectorAll(".nav-desktop button");
+  const botonesMobile = document.querySelectorAll(".nav-mobile-menu button");
+
+  botonesDesktop.forEach((boton) => {
+    boton.addEventListener("click", () => {
       const tipo = obtenerTipoDesdeCategoriaTexto(boton.textContent);
       actualizarProductosPorTipo(tipo);
-      botonesDesktop.forEach(b => b.classList.remove('active'));
-      boton.classList.add('active');
+      botonesDesktop.forEach((b) => b.classList.remove("active"));
+      boton.classList.add("active");
     });
   });
-  
-  botonesMobile.forEach(boton => {
-    boton.addEventListener('click', () => {
+
+  botonesMobile.forEach((boton) => {
+    boton.addEventListener("click", () => {
       const tipo = obtenerTipoDesdeCategoriaTexto(boton.textContent);
       actualizarProductosPorTipo(tipo);
-      botonesMobile.forEach(b => b.classList.remove('active'));
-      boton.classList.add('active');
+      botonesMobile.forEach((b) => b.classList.remove("active"));
+      boton.classList.add("active");
     });
   });
 };
 
 const obtenerTipoDesdeCategoriaTexto = (textoCategoria) => {
   const texto = textoCategoria.trim().toLowerCase();
-  switch(texto) {
-    case 'celulares': return 'celular';
-    case 'tablets': return 'tablet';
-    case 'laptops': return 'laptop';
-    case 'pc': return 'pc';
-    case 'accesorios': return 'accesorio';
-    default: return 'todos';
+  switch (texto) {
+    case "celulares":
+      return "celular";
+    case "tablets":
+      return "tablet";
+    case "laptops":
+      return "laptop";
+    case "pc":
+      return "pc";
+    case "accesorios":
+      return "accesorio";
+    default:
+      return "todos";
   }
 };
 
 const actualizarProductosPorTipo = (tipo) => {
   tipoActivo = tipo;
-  
-  if (tipo === 'todos') {
+
+  if (tipo === "todos") {
     productosMasVendidos = todosLosProductos.slice(0, 5);
     productosRecienLlegados = todosLosProductos.slice(5, 10);
   } else {
-    const productosFiltrados = todosLosProductos.filter(producto => producto.tipo === tipo);
-    
+    const productosFiltrados = todosLosProductos.filter(
+      (producto) => producto.tipo === tipo
+    );
+
     const mitad = Math.min(5, Math.ceil(productosFiltrados.length / 2));
     productosMasVendidos = productosFiltrados.slice(0, mitad);
     productosRecienLlegados = productosFiltrados.slice(mitad);
   }
-  
+
   mostrarProductos();
 };
 
@@ -76,8 +91,12 @@ const mostrarProductos = () => {
 
   productosMasVendidos.forEach((item) => {
     newHtmlMasVendidos += `
-      <a href="producto.html?producto=${encodeURIComponent(item.nombre)}" class="product-card">
-        <div class="product-image"><img src="${item.imagen}" alt="${item.nombre}"/></div>
+      <a href="producto.html?producto=${encodeURIComponent(
+        item.nombre
+      )}" class="product-card">
+        <div class="product-image"><img src="${item.imagen}" alt="${
+      item.nombre
+    }"/></div>
         <div class="product-info">
           <div class="product-details">
             <p class="product-brand">${item.marca}</p>
@@ -94,8 +113,12 @@ const mostrarProductos = () => {
 
   productosRecienLlegados.forEach((item) => {
     newHtmlRecienLlegados += `
-      <a href="producto.html?producto=${encodeURIComponent(item.nombre)}" class="product-card">
-        <div class="product-image"><img src="${item.imagen}" alt="${item.nombre}"/></div>
+      <a href="producto.html?producto=${encodeURIComponent(
+        item.nombre
+      )}" class="product-card">
+        <div class="product-image"><img src="${item.imagen}" alt="${
+      item.nombre
+    }"/></div>
         <div class="product-info">
           <div class="product-details">
             <p class="product-brand">${item.marca}</p>
@@ -115,12 +138,12 @@ const mostrarProductos = () => {
 };
 const formularioPago = document.querySelector(".checkout-payment form");
 
-formularioPago.addEventListener("submit", e => {
-    e.preventDefault();
+formularioPago.addEventListener("submit", (e) => {
+  e.preventDefault();
 
-    localStorage.removeItem("carrito");
+  localStorage.removeItem("carrito");
 
-    alert("¡Gracias por tu compra! Tu pedido ha sido procesado con éxito.");
+  alert("¡Gracias por tu compra! Tu pedido ha sido procesado con éxito.");
 
-    window.location.href = "index.html";
+  window.location.href = "index.html";
 });
