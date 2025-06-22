@@ -31,7 +31,7 @@ const configurarFiltros = () => {
       const tipo = obtenerTipoDesdeCategoriaTexto(boton.textContent);
       actualizarProductosPorTipo(tipo);
       botonesDesktop.forEach((b) => b.classList.remove("active"));
-      boton.classList.add("active");
+      if (tipo !== "todos") boton.classList.add("active");
     });
   });
 
@@ -40,8 +40,18 @@ const configurarFiltros = () => {
       const tipo = obtenerTipoDesdeCategoriaTexto(boton.textContent);
       actualizarProductosPorTipo(tipo);
       botonesMobile.forEach((b) => b.classList.remove("active"));
-      boton.classList.add("active");
+      if (tipo !== "todos") boton.classList.add("active");
     });
+  });
+
+  //Configurando categorias en responsive
+
+  const botonMobileToggle = document.querySelector(".nav-toggle");
+  const mobileMenu = document.querySelector(".nav-mobile-menu");
+
+  botonMobileToggle.addEventListener("click", () => {
+    mobileMenu.style.display =
+      mobileMenu.style.display === "flex" ? "none" : "flex";
   });
 };
 
@@ -136,14 +146,3 @@ const mostrarProductos = () => {
   seccionProdMasVendidos.innerHTML = newHtmlMasVendidos;
   seccionProdRecienLlegados.innerHTML = newHtmlRecienLlegados;
 };
-const formularioPago = document.querySelector(".checkout-payment form");
-
-formularioPago.addEventListener("submit", (e) => {
-  e.preventDefault();
-
-  localStorage.removeItem("carrito");
-
-  alert("¡Gracias por tu compra! Tu pedido ha sido procesado con éxito.");
-
-  window.location.href = "index.html";
-});

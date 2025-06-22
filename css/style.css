@@ -227,6 +227,14 @@ body {
   display: none;
 }
 
+.nav-mobile .active {
+  background-color: #b98304;
+}
+
+.nav-desktop .active {
+  background-color: #b98304;
+}
+
 .nav-desktop {
   display: flex;
   justify-content: center;
@@ -1026,4 +1034,3 @@ footer h3 {
 footer section {
   margin-bottom: 12px;
 }
-
