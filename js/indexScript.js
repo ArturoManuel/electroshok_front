@@ -1,16 +1,71 @@
 let productosMasVendidos = [];
 let productosRecienLlegados = [];
+let todosLosProductos = [];
+let tipoActivo = 'todos'; 
 
 document.addEventListener("DOMContentLoaded", () => {
   fetch("js/productos.json")
       .then(res => res.json())
       .then(data => {
-
-        productosMasVendidos = data.slice(0, 5);
-        productosRecienLlegados = data.slice(5, 10);
-        mostrarProductos();
+        todosLosProductos = data;
+        
+        actualizarProductosPorTipo('todos');
+        
+        configurarFiltros();
       });
 });
+
+const configurarFiltros = () => {
+  const botonesDesktop = document.querySelectorAll('.nav-desktop button');
+  const botonesMobile = document.querySelectorAll('.nav-mobile-menu button');
+  
+  botonesDesktop.forEach(boton => {
+    boton.addEventListener('click', () => {
+      const tipo = obtenerTipoDesdeCategoriaTexto(boton.textContent);
+      actualizarProductosPorTipo(tipo);
+      botonesDesktop.forEach(b => b.classList.remove('active'));
+      boton.classList.add('active');
+    });
+  });
+  
+  botonesMobile.forEach(boton => {
+    boton.addEventListener('click', () => {
+      const tipo = obtenerTipoDesdeCategoriaTexto(boton.textContent);
+      actualizarProductosPorTipo(tipo);
+      botonesMobile.forEach(b => b.classList.remove('active'));
+      boton.classList.add('active');
+    });
+  });
+};
+
+const obtenerTipoDesdeCategoriaTexto = (textoCategoria) => {
+  const texto = textoCategoria.trim().toLowerCase();
+  switch(texto) {
+    case 'celulares': return 'celular';
+    case 'tablets': return 'tablet';
+    case 'laptops': return 'laptop';
+    case 'pc': return 'pc';
+    case 'accesorios': return 'accesorio';
+    default: return 'todos';
+  }
+};
+
+const actualizarProductosPorTipo = (tipo) => {
+  tipoActivo = tipo;
+  
+  if (tipo === 'todos') {
+    productosMasVendidos = todosLosProductos.slice(0, 5);
+    productosRecienLlegados = todosLosProductos.slice(5, 10);
+  } else {
+    const productosFiltrados = todosLosProductos.filter(producto => producto.tipo === tipo);
+    
+    const mitad = Math.min(5, Math.ceil(productosFiltrados.length / 2));
+    productosMasVendidos = productosFiltrados.slice(0, mitad);
+    productosRecienLlegados = productosFiltrados.slice(mitad);
+  }
+  
+  mostrarProductos();
+};
 
 const mostrarProductos = () => {
   const seccionProdMasVendidos = document.getElementById("best-seller");
